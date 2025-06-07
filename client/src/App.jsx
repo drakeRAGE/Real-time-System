@@ -24,13 +24,13 @@ function App() {
   }, [])
 
   return (
-    <div>
-
-      <h2>{backendURL}</h2>
-      <h1>Real Time IoT Dashboard</h1>
-      <p>Temperature: {data.temperature}</p>
-      <p>Humidity: {data.humidity}</p>
-      <p>Last Updated: {data.timestamp}</p>
+    <div className="container">
+      <div className="card">
+        <h1>Real-Time IoT Dashboard</h1>
+        <p>🌡️ Temperature: {data.temperature} °C</p>
+        <p>💧 Humidity: {data.humidity} %</p>
+        <p>⏱️ Last Updated: {data.timestamp}</p>
+      </div>
     </div>
   )
 }
